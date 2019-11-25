@@ -99,8 +99,8 @@ html{
     padding: 3.75rem;
     z-index: 99;
     overflow-x: hidden;
-    visibility: hidden;
-    opacity: 0;
+    /*visibility: hidden;
+    opacity: 0;*/ 
     transform: translateY(-100px);
     transition: all .4s ease-in-out;
 }
@@ -139,4 +139,37 @@ html{
     border-bottom: 10px solid #f1c30f;
     border-right: 10px solid #f1c30f;
     transition: all 0.5s;
+}
+
+.nav2 ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;
+    color: #18191d;
+}
+
+.nav2 ul li a span{
+    color: #b9b9b9;
+}
+
+.nav2 ul li:hover{
+    background-color: #ff1637;
+}
+
+.nav2 ul li:hover a,
+.nav2 ul li:hover a span{
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    border: 3px solid white;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 20px;
+    display: inherit;
+    text-align: center;
+    border-right: 50px;
+    transition: all ease 1s;
+    margin-top: 40px;
 }
