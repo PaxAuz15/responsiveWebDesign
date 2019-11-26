@@ -4,6 +4,16 @@ $(document).ready(function(){
     });
 
     $(".nav-close").click(function(){
-        $(".full-nav").remove("open");
+        $(".full-nav").removeClass("open");
     });
-})
+
+    $(window).scroll(function(){
+        var scrolling = $(window).scrollTop();
+        if( scrolling > 100){
+            $(".nav").addClass("sticky");
+        }
+        else{
+            $(".nav").removeClass("sticky");
+        }
+    });
+});

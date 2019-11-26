@@ -93,7 +93,7 @@ html{
     color: #18191d;
     position: fixed;
     left: 0;
-    top: 96px;
+    top: 0;
     height: 100%;
     width: 100%;
     padding: 3.75rem;
@@ -116,7 +116,7 @@ html{
 .full-nav .logo{
     display: flex;
     justify-content: center;
-    padding: 6rem;
+    padding: 4rem;
 }
 
 .nav2{
@@ -233,4 +233,43 @@ ul.social-icons.list-inline{
 
 .nav-close span:nth-child(2){
     transform: rotate(-45deg);
+}
+
+.nav.sticky{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+    animation-name: animationFade;
+    animation-fill-mode: both;
+}
+
+@keyframes animationFade{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+    }
+}
+.nav.sticky a{
+    color: #18191d;
+}
+
+.nav.sticky ul li.logo .white{
+    display: none;
+}
+
+.nav.sticky ul li.logo .black{
+    display: inline-block;
+}
+
+.nav.sticky .nav-icon span{
+    background: #18191d;
 }
