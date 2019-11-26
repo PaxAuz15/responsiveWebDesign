@@ -93,14 +93,14 @@ html{
     color: #18191d;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 96px;
     height: 100%;
     width: 100%;
     padding: 3.75rem;
     z-index: 99;
     overflow-x: hidden;
-    /*visibility: hidden;
-    opacity: 0;*/ 
+    visibility: hidden;
+    opacity: 0;
     transform: translateY(-100px);
     transition: all .4s ease-in-out;
 }
@@ -162,14 +162,75 @@ html{
 
 .social-icons a {
     color: white;
-    border: 3px solid white;
+    border: 4px solid white;
     width: 50px;
     height: 50px;
     line-height: 40px;
     font-size: 20px;
     display: inherit;
     text-align: center;
-    border-right: 50px;
+    border-radius: 50px;
+    /*border-right: 50px;*/
     transition: all ease 1s;
     margin-top: 40px;
+}
+
+.social-icons a:hover i{
+    color: #000;
+    margin-top: -10px;
+    border-color: #000;
+}
+
+.social-icons a:hover {
+    color: #000;
+    margin-top: -10px;
+    border-color: #000;
+}
+
+ul.social-icons.list-inline{
+    text-align: center;
+    margin-top: 22px;
+}
+
+.list-inline > li{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.corner-circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 0 0 0 120px;
+    z-index: 2;
+}
+
+.nav-close{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.nav-close span{
+    background: #18191d;
+    width: 30px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 14px;
+}
+
+.nav-close span:nth-child(1){
+    transform: rotate(45deg);
+}
+
+.nav-close span:nth-child(2){
+    transform: rotate(-45deg);
 }
