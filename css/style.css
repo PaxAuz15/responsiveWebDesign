@@ -18,7 +18,8 @@ html{
 .nav{
     display: flex;
     justify-content: center;
-    padding: 20px 30px;
+    /*padding: 20px 30px;*/
+    padding: 15px 15px;
     position: absolute;
     transform: all 0.3s;
     background: white;
@@ -273,3 +274,106 @@ ul.social-icons.list-inline{
 .nav.sticky .nav-icon span{
     background: #18191d;
 }
+
+video#herovideo{
+    width: 100%;
+}
+
+.bx-wrapper .social-icons a{
+    color: white;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: inherit;
+    text-align: center;
+    padding-top: 5px;
+    transition: all ease 1s;
+    background: #000;
+    border-radius: 0px;
+}
+
+.bx-wrapper .social-icons a i{
+    position: relative;
+    bottom: 7px;
+}
+
+.vidContent{
+    position: absolute;
+    top: 290px;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+.vidContent h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.vidContent p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#vidBtn{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 40px;
+    border: none;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    margin-top: 18px;
+    border-radius: 50px;
+    animation: shadow-pulse 2s infinite;
+    text-transform: uppercase;
+}
+
+@keyframes shadow-pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(0,0,0,0);
+    }
+}
+
+#vidBtn:hover{
+    background: white;
+    color: black;
+    /*animation: none;*/
+    text-decoration: none;
+}
+
+.social-icons a{
+    color: #333 !important;
+    border: 4px solid white;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 20px;
+    display: inherit;
+    text-align: center;
+    border-radius: 50px;
+    transition: all ease 1s;
+    margin-top: 40px;
+    background: white !important;
+}
+
+ul.social-icons.list-inline{
+    text-align: center;
+    margin-top: 22px;
+}
+
+.list-inline>li{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
