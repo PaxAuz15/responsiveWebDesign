@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     $(".nav-icon").click(function(){
         $(".full-nav").addClass("open");
     });
@@ -15,5 +16,15 @@ $(document).ready(function(){
         else{
             $(".nav").removeClass("sticky");
         }
+
+        $('.bxslider').bxSlider({
+            mode: 'horizontal',
+            moveSlides:1,
+            slideMargin: 40,
+            infiniteLoop:true,
+            minSlides:1,
+            maxSlides:1,
+            speed:1200,
+        });
     });
 });
