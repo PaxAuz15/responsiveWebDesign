@@ -18,8 +18,9 @@ html{
 .nav{
     display: flex;
     justify-content: center;
-    /*padding: 20px 30px;*/
     padding: 15px 15px;
+    padding-top: 12px;
+    padding-bottom: 3px;
     position: absolute;
     transform: all 0.3s;
     background: white;
@@ -43,7 +44,7 @@ html{
     font-size: 1.1em;
     color: #333;
     padding: 0.25rem 0;
-    margin: 0 1.80rem;
+    margin: 10px 1.80rem;
     text-transform: uppercase;
 }
 
@@ -344,10 +345,9 @@ video#herovideo{
     }
 }
 
-#vidBtn:hover{
+#vidBtn{
     background: white;
     color: black;
-    /*animation: none;*/
     text-decoration: none;
 }
 
