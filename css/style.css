@@ -276,16 +276,14 @@ ul.social-icons.list-inline{
     background: #18191d;
 }
 
-video#herovideo{
-    width: 100%;
-}
+
 
 .bx-wrapper .social-icons a{
     color: white;
     border: 1px solid white;
     width: 40px;
     height: 40px;
-    font-size: 20px;
+    font-size: 100%;
     display: inherit;
     text-align: center;
     padding-top: 5px;
@@ -310,7 +308,7 @@ video#herovideo{
 
 .vidContent h1{
     font-family: 'Oswald', sans-serif;
-    font-size: 5em;
+    font-size: 200%;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -319,6 +317,7 @@ video#herovideo{
 
 .vidContent p{
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 100%;
 }
 
 #vidBtn{
